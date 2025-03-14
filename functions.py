@@ -30,7 +30,7 @@ def words_cleanup(words_path):
 
     updated_words = []
     for word in words:
-        if '!collect_messages' not in word():
+        if '!collect_messages' not in word:
             updated_words.append(word)
 
     write_words_to_file(words_path, updated_words)
